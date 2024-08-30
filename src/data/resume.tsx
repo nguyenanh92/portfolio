@@ -81,7 +81,7 @@ export const DATA = {
       location: "",
       title: "Software Engineer",
       logoUrl: "/add.jpg",
-      start: "Otc 2021",
+      start: "Otc 2022",
       end: "Now",
       description: "Code for various projects",
     },
@@ -152,10 +152,10 @@ export const DATA = {
     {
       title: "VNFarm",
       href: "https://vnfarm.com.vn/",
-      dates: "Jan 2024 - Feb 2024",
+      dates: "Mar 2022 - Sep 2022",
       active: true,
       description:
-        "Dự án riêng về website bán hàng chuẩn SEO",
+        "Dự án riêng về website bán hàng chuẩn SEO, tích hợp các cổng thanh toán và đơn vị vận chuyển",
       technologies: [
         "Next.js",
         "Typescript",
@@ -173,44 +173,128 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "https://i.ibb.co/p2zjHZv/vn-farm.png",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+        "",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "Panda Tracker",
+      href: "https://panda-tracker.vercel.app/",
+      dates: "2024",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "Quản lý tài chính và chi tiêu",
       technologies: [
         "Next.js",
         "Typescript",
-        "PostgreSQL",
+        "MongoDB",
         "Prisma",
         "TailwindCSS",
-        "Stripe",
         "Shadcn UI",
-        "Magic UI",
+        "clerk auth"
       ],
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
+          href: "https://panda-tracker.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
+      ],
+      image: "/panda-tracker.png",
+      video: "",
+    },
+    {
+      title: "Salary Exchange",
+      href: "https://salaryaod.netlify.app/",
+      dates: "2022",
+      active: true,
+      description:
+        "Web craw tỷ giá và quy đổi tiền tệ",
+      technologies: [
+        "Vue.js",
+        "Typescript",
+        "Nodejs",
+        "XML",
+      ],
+      links: [
         {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
+          type: "Website",
+          href: "https://panda-tracker.vercel.app",
+          icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/salary.png",
+      video: "",
     },
-   
- 
+    {
+      title: "Panda Bet",
+      href: "https://salaryaod.netlify.app/",
+      dates: "2024",
+      active: true,
+      description:
+        "Web cá cược hội thao nội bộ",
+      technologies: [
+        "Next.js",
+        "MongoDB",
+        "NextAuth",
+        "Typescript",
+        "Prisma",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://panda-tracker.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/panda-bet.png",
+      video: "",
+    },
+    {
+      title: "Panda Scan",
+      href: "https://panda-scan.vercel.app/",
+      dates: "2024",
+      active: true,
+      description:
+        "Web check thông tin của thư viện NPM và NUGET PACKAGE",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://panda-scan.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/scan.png",
+      video: "",
+    },
+    {
+      title: "Panda Tarot",
+      href: "https://panda-tarot.vercel.app/",
+      dates: "2024",
+      active: true,
+      description:
+        "Web xem tarot online",
+      technologies: [
+        "React.js",
+        "GeminiAPI",
+        "Typescript",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://panda-tarot.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/tarot.png",
+      video: "",
+    },
   ],
   hackathons: [
     {
