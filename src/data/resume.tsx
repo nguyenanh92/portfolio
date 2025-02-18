@@ -27,6 +27,20 @@ export const DATA = {
     "Python",
     "Docker",
     "Kubernetes",
+    "React Native",
+    "Firebase",
+    "Supabase",
+    "Clerk",
+    "Vercel",
+    "Netlify",
+    "Vue.js",
+    "Nuxt.js",
+    "TailwindCSS",
+    "Shadcn UI",
+    "Ant Design",
+    "Bootstrap",
+
+
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -136,7 +150,7 @@ export const DATA = {
       href: "https://aptech.fpt.edu.vn/",
       degree: "Software  & Web Developer",
       logoUrl: "/Logo-fpt-aptech.png",
-      start: "2026",
+      start: "2016",
       end: "2019",
     },
     {
@@ -177,6 +191,33 @@ export const DATA = {
       video:
         "",
     },
+    {
+      title: "Panda Fund",
+      href: "https://panda-fund.vercel.app/dashboard/",
+      dates: "2024",
+      active: true,
+      description:
+        "Quản lý quỹ và chi tiêu",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "MongoDB",
+        "Prisma",
+        "TailwindCSS",
+        "Shadcn UI",
+        "clerk auth"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://panda-fund.vercel.app/dashboard/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/panda-fund.png",
+      video: "",
+    },
+
     {
       title: "Panda Tracker",
       href: "https://panda-tracker.vercel.app/",
@@ -219,7 +260,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://panda-tracker.vercel.app",
+          href: "https://salaryaod.netlify.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -228,7 +269,7 @@ export const DATA = {
     },
     {
       title: "Panda Bet",
-      href: "https://salaryaod.netlify.app/",
+      href: "https://panda88.vercel.app/",
       dates: "2024",
       active: true,
       description:
@@ -244,7 +285,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://panda-tracker.vercel.app",
+          href: "https://panda88.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -274,6 +315,25 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Panda Note Money Extension",
+      href: "https://chromewebstore.google.com/detail/pandaex/bjgfakkjhmjipfonglkbecengkjjaacg",
+      dates: "2024",
+      active: true,
+      description:
+        "Extension note tiền nợ ăn trưa",
+      technologies: [
+        "Javascript",
+      ],
+      links: [
+        {
+          type: "Extension",
+          href: "https://chromewebstore.google.com/detail/pandaex/bjgfakkjhmjipfonglkbecengkjjaacg",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/panda-note.png",
+      video: "",
+    }, {
       title: "Panda Tarot",
       href: "https://panda-tarot.vercel.app/",
       dates: "2024",
