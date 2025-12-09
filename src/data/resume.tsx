@@ -8,8 +8,7 @@ export const DATA = {
   url: "https://nguyenanh98.com/",
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
-  description:
-    "1 programmer. I love building things and helping people.",
+  description: "1 programmer. I love building things and helping people.",
   summary:
     "Software engineer with 5 years of experience in software development. Proficient in designing, developing, and deploying end-to-end web/mobile applications. Skilled in C#, JavaScript, ReactJS, and .NET Core. Proven track record in both product and outsourcing projects, working independently and collaboratively.",
   skills: [
@@ -39,8 +38,6 @@ export const DATA = {
     "Shadcn UI",
     "Ant Design",
     "Bootstrap",
-
-
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -108,7 +105,8 @@ export const DATA = {
       logoUrl: "/vnext.svg",
       start: "Jun 2021",
       end: "Aug 2022 ",
-      description: "Participated in outsourcing projects, mainly building backend systems.",
+      description:
+        "Participated in outsourcing projects, mainly building backend systems.",
     },
     {
       company: "VCCORP ",
@@ -130,7 +128,8 @@ export const DATA = {
       logoUrl: "/navi.png",
       start: "Sep 2020",
       end: "Apr 2021",
-      description: "Maintained trading module systems, built performance testing tools. Developed online learning support web. Researched new technologies and organized seminars.",
+      description:
+        "Maintained trading module systems, built performance testing tools. Developed online learning support web. Researched new technologies and organized seminars.",
     },
     {
       company: "IIT Techcom",
@@ -141,7 +140,8 @@ export const DATA = {
       logoUrl: "/logo-iit.png",
       start: "Jan 2019",
       end: "Sep 2020",
-      description: "Developed websites for restaurants, hotels, and tourism. Directly interacted with clients, brainstormed ideas, designed mockups, features, and implemented them.",
+      description:
+        "Developed websites for restaurants, hotels, and tourism. Directly interacted with clients, brainstormed ideas, designed mockups, features, and implemented them.",
     },
   ],
   education: [
@@ -163,6 +163,88 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "Synthanswerai",
+      href: "https://www.synthanswerai.com/",
+      dates: "2025",
+      active: true,
+      description:
+        "Discover how SynthAnswer AI is changing the way students, researchers, and professionals approach problem-solving with cutting-edge artificial intelligence technology.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "Polar.sh",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.synthanswerai.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "https://www.synthanswerai.com/img/slider-4.png",
+      video: "",
+    },
+    {
+      title: "AuraMemory.dev",
+      href: "https://www.auramemory.dev/",
+      dates: "2025",
+      active: true,
+      description:
+        "Transform your AI interactions with intelligent memory management. Store, search, and leverage context from all your conversations to create more meaningful and productive AI experiences.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "Python FastAPI",
+        "MCP Server",
+        "Shadcn UI",
+        "Magic UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.auramemory.dev/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "https://i.ibb.co/Hf55rxGX/Screenshot-2025-12-09-093617.png",
+      video: "",
+    },
+    {
+      title: "Beestorylab",
+      href: "https://www.beestorylab.com/en",
+      dates: "2025",
+      active: true,
+      description:
+        "Create beautiful comics with just a few text prompts. Easy, fast, and fun for all ages!",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "Python FastAPI",
+        "MCP Server",
+        "Shadcn UI",
+        "Magic UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.beestorylab.com/en",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "https://i.ibb.co/rR7YWk5W/Screenshot-2025-12-09-094234.png",
+      video: "",
+    },
     {
       title: "VNFarm",
       href: "https://vnfarm.com.vn/",
@@ -188,16 +270,14 @@ export const DATA = {
         },
       ],
       image: "https://i.ibb.co/p2zjHZv/vn-farm.png",
-      video:
-        "",
+      video: "",
     },
     {
       title: "Panda Fund",
       href: "https://panda-fund.vercel.app/dashboard/",
       dates: "2024",
       active: true,
-      description:
-        "Quản lý quỹ và chi tiêu",
+      description: "Quản lý quỹ và chi tiêu",
       technologies: [
         "Next.js",
         "Typescript",
@@ -205,7 +285,7 @@ export const DATA = {
         "Prisma",
         "TailwindCSS",
         "Shadcn UI",
-        "clerk auth"
+        "clerk auth",
       ],
       links: [
         {
@@ -223,8 +303,7 @@ export const DATA = {
       href: "https://panda-tracker.vercel.app/",
       dates: "2024",
       active: true,
-      description:
-        "Quản lý tài chính và chi tiêu",
+      description: "Quản lý tài chính và chi tiêu",
       technologies: [
         "Next.js",
         "Typescript",
@@ -232,7 +311,7 @@ export const DATA = {
         "Prisma",
         "TailwindCSS",
         "Shadcn UI",
-        "clerk auth"
+        "clerk auth",
       ],
       links: [
         {
@@ -249,14 +328,8 @@ export const DATA = {
       href: "https://salaryaod.netlify.app/",
       dates: "2022",
       active: true,
-      description:
-        "Web craw tỷ giá và quy đổi tiền tệ",
-      technologies: [
-        "Vue.js",
-        "Typescript",
-        "Nodejs",
-        "XML",
-      ],
+      description: "Web craw tỷ giá và quy đổi tiền tệ",
+      technologies: ["Vue.js", "Typescript", "Nodejs", "XML"],
       links: [
         {
           type: "Website",
@@ -272,8 +345,7 @@ export const DATA = {
       href: "https://panda88.vercel.app/",
       dates: "2024",
       active: true,
-      description:
-        "Web cá cược hội thao nội bộ",
+      description: "Web cá cược hội thao nội bộ",
       technologies: [
         "Next.js",
         "MongoDB",
@@ -297,13 +369,8 @@ export const DATA = {
       href: "https://panda-scan.vercel.app/",
       dates: "2024",
       active: true,
-      description:
-        "Web check thông tin của thư viện NPM và NUGET PACKAGE",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "Shadcn UI",
-      ],
+      description: "Web check thông tin của thư viện NPM và NUGET PACKAGE",
+      technologies: ["Next.js", "Typescript", "Shadcn UI"],
       links: [
         {
           type: "Website",
@@ -319,11 +386,8 @@ export const DATA = {
       href: "https://chromewebstore.google.com/detail/pandaex/bjgfakkjhmjipfonglkbecengkjjaacg",
       dates: "2024",
       active: true,
-      description:
-        "Extension note tiền nợ ăn trưa",
-      technologies: [
-        "Javascript",
-      ],
+      description: "Extension note tiền nợ ăn trưa",
+      technologies: ["Javascript"],
       links: [
         {
           type: "Extension",
@@ -333,18 +397,14 @@ export const DATA = {
       ],
       image: "/panda-note.png",
       video: "",
-    }, {
+    },
+    {
       title: "Panda Tarot",
       href: "https://panda-tarot.vercel.app/",
       dates: "2024",
       active: true,
-      description:
-        "Web xem tarot online",
-      technologies: [
-        "React.js",
-        "GeminiAPI",
-        "Typescript",
-      ],
+      description: "Web xem tarot online",
+      technologies: ["React.js", "GeminiAPI", "Typescript"],
       links: [
         {
           type: "Website",
