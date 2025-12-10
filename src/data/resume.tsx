@@ -164,6 +164,23 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Eniplaces",
+      href: "https://www.eniplaces.com/",
+      dates: "2025",
+      active: true,
+      description:"Explore thousands of places across different categories. From authentic local eateries to luxury hotels, find exactly what you're searching for.",
+      technologies: ["Next.js", "Typescript", "TailwindCSS", "Shadcn UI"],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.eniplaces.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "https://i.ibb.co/N60QYsNZ/Screenshot-2025-12-10-175525.png",
+      video: "",
+    },
+    {
       title: "Synthanswerai",
       href: "https://www.synthanswerai.com/",
       dates: "2025",
