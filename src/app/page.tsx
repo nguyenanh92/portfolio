@@ -9,11 +9,15 @@ import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { Icons } from "@/components/icons";
 
 const BLUR_FADE_DELAY = 0.04;
 
-// Categorize skills static grouping
 const SKILL_CATEGORIES = [
+  {
+    name: "AI & Agent Engineering",
+    skills: ["AI Agents", "RAG (Retrieval-Augmented Generation)", "Prompt Engineering", "Context Engineering", "Azure AI Foundry", "MCP (Model Context Protocol)", "CopilotKit", "LangChain", "LangGraph", "Harness AI", "OpenAI / Gemini APIs", "Vector Databases"],
+  },
   {
     name: "Languages",
     skills: ["Javascript", "Typescript", "C#", "Python"],
@@ -28,7 +32,7 @@ const SKILL_CATEGORIES = [
   },
   {
     name: "Cloud & Infrastructure",
-    skills: ["Docker", "Kubernetes", "Firebase", "Clerk", "Vercel", "Netlify"],
+    skills: ["Microsoft Azure", "DevOps", "CI/CD", "Docker", "Kubernetes", "Firebase", "Clerk", "Vercel", "Netlify"],
   },
 ];
 
@@ -115,6 +119,7 @@ export default function Page() {
                 {[
                   { label: "About", href: "#about" },
                   { label: "Work Experience", href: "#work" },
+                  { label: "Certificates", href: "#certificates" },
                   { label: "Skills & Stack", href: "#skills" },
                   { label: "Selected Projects", href: "#projects" },
                   { label: "Get in Touch", href: "#contact" }
@@ -218,19 +223,91 @@ export default function Page() {
             </div>
           </section>
 
-          {/* Skills Section */}
-          <section id="skills" className="scroll-mt-24">
+          {/* Certificates Section */}
+          <section id="certificates" className="scroll-mt-24">
             <div className="space-y-6">
               <BlurFade delay={BLUR_FADE_DELAY * 7}>
                 <div className="flex items-center gap-3">
-                  <h2 className="text-xs font-mono text-primary uppercase tracking-widest">04 / Skills</h2>
+                  <h2 className="text-xs font-mono text-primary uppercase tracking-widest">04 / Certificates</h2>
+                  <div className="h-[1px] flex-1 bg-zinc-200 dark:bg-zinc-800/60"></div>
+                </div>
+              </BlurFade>
+
+              <div className="flex flex-col space-y-4">
+                {DATA.certificates.map((cert, id) => {
+                  const IconComponent = Icons[cert.issuerLogo as keyof typeof Icons];
+                  return (
+                    <BlurFade key={cert.title} delay={BLUR_FADE_DELAY * 8 + id * 0.05}>
+                      <div className="flex items-start gap-4 p-5 rounded-2xl border border-zinc-200/50 dark:border-zinc-800/40 bg-zinc-500/5 dark:bg-zinc-400/5 hover:bg-zinc-500/10 dark:hover:bg-zinc-400/10 transition-all duration-300">
+                        <div className="flex-none flex items-center justify-center size-10 rounded-xl bg-white dark:bg-zinc-950 border border-zinc-200/50 dark:border-zinc-800/30 text-zinc-500">
+                          {IconComponent ? (
+                            <IconComponent className="size-5 text-foreground" />
+                          ) : (
+                            <span className="text-xs font-mono font-bold">{cert.issuer[0]}</span>
+                          )}
+                        </div>
+                        <div className="flex-grow space-y-1">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <h3 className="text-sm font-semibold leading-tight text-foreground">
+                              {cert.title}
+                            </h3>
+                            <span className="text-[10px] font-mono text-muted-foreground shrink-0 sm:text-right">
+                              {cert.date}
+                            </span>
+                          </div>
+                          <div className="text-xs font-medium text-primary">
+                            {cert.issuer}
+                          </div>
+                          
+                          {cert.description && (
+                            <p className="text-xs text-muted-foreground leading-relaxed mt-2 max-w-[65ch]">
+                              {cert.description}
+                            </p>
+                          )}
+
+                          {cert.skills && cert.skills.length > 0 && (
+                            <div className="flex flex-wrap gap-1 pt-1.5">
+                              {cert.skills.map((skill) => (
+                                <Badge key={skill} variant="outline" className="px-1.5 py-0.5 text-[9px] font-mono border-zinc-200/60 dark:border-zinc-800/30 bg-white dark:bg-zinc-900 text-zinc-500 rounded-md">
+                                  {skill}
+                                </Badge>
+                              ))}
+                            </div>
+                          )}
+
+                          {cert.credentialUrl && (
+                            <div className="pt-1.5">
+                              <Link
+                                href={cert.credentialUrl}
+                                target="_blank"
+                                className="inline-flex items-center gap-1 text-[10px] font-mono font-medium hover:underline text-primary"
+                              >
+                                Show credential ↗
+                              </Link>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </BlurFade>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+
+          {/* Skills Section */}
+          <section id="skills" className="scroll-mt-24">
+            <div className="space-y-6">
+              <BlurFade delay={BLUR_FADE_DELAY * 9}>
+                <div className="flex items-center gap-3">
+                  <h2 className="text-xs font-mono text-primary uppercase tracking-widest">05 / Skills</h2>
                   <div className="h-[1px] flex-1 bg-zinc-200 dark:bg-zinc-800/60"></div>
                 </div>
               </BlurFade>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {SKILL_CATEGORIES.map((category, catIdx) => (
-                  <BlurFade key={category.name} delay={BLUR_FADE_DELAY * 8 + catIdx * 0.05}>
+                  <BlurFade key={category.name} delay={BLUR_FADE_DELAY * 10 + catIdx * 0.05}>
                     <div className="p-5 rounded-2xl border border-zinc-200/50 dark:border-zinc-800/40 bg-zinc-500/5 dark:bg-zinc-400/5 space-y-3 h-full">
                       <h3 className="text-xs font-mono font-semibold uppercase tracking-wider text-foreground">
                         {category.name}
@@ -256,9 +333,9 @@ export default function Page() {
           {/* Projects Section */}
           <section id="projects" className="scroll-mt-24">
             <div className="space-y-8">
-              <BlurFade delay={BLUR_FADE_DELAY * 9}>
+              <BlurFade delay={BLUR_FADE_DELAY * 11}>
                 <div className="flex items-center gap-3">
-                  <h2 className="text-xs font-mono text-primary uppercase tracking-widest">05 / Projects</h2>
+                  <h2 className="text-xs font-mono text-primary uppercase tracking-widest">06 / Projects</h2>
                   <div className="h-[1px] flex-1 bg-zinc-200 dark:bg-zinc-800/60"></div>
                 </div>
               </BlurFade>
@@ -268,7 +345,7 @@ export default function Page() {
                   // Asymmetric Bento layout rule: item 1, 4, 7, 10 span 2 columns on medium+ screens
                   const isFeatured = id === 0 || id === 3 || id === 6 || id === 9;
                   return (
-                    <BlurFade key={project.title} delay={BLUR_FADE_DELAY * 10 + id * 0.05} className={cn(isFeatured ? "md:col-span-2" : "md:col-span-1")}>
+                    <BlurFade key={project.title} delay={BLUR_FADE_DELAY * 12 + id * 0.05} className={cn(isFeatured ? "md:col-span-2" : "md:col-span-1")}>
                       <ProjectCard
                         href={project.href}
                         title={project.title}
@@ -288,7 +365,7 @@ export default function Page() {
 
           {/* Contact Section */}
           <section id="contact" className="scroll-mt-24">
-            <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <BlurFade delay={BLUR_FADE_DELAY * 13}>
               <div className="rounded-2xl liquid-glass p-8 text-center space-y-6 relative overflow-hidden">
                 <div className="absolute top-0 right-0 size-24 bg-primary/10 rounded-full blur-2xl"></div>
                 <div className="absolute bottom-0 left-0 size-24 bg-primary/10 rounded-full blur-2xl"></div>

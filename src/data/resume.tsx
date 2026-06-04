@@ -6,11 +6,11 @@ export const DATA = {
   avatarUrl: "/me.webp",
   initials: "NA",
   url: "https://nguyenanh98.com/",
-  location: "San Francisco, CA",
+  location: "Ha Noi, Viet Nam",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description: "1 programmer. I love building things and helping people.",
   summary:
-    "Software engineer with 5 years of experience in software development. Proficient in designing, developing, and deploying end-to-end web/mobile applications. Skilled in C#, JavaScript, ReactJS, and .NET Core. Proven track record in both product and outsourcing projects, working independently and collaboratively.",
+    "Software engineer with 8 years of experience in software development. Proficient in designing, developing, and deploying end-to-end web/mobile applications, with a strong specialization in AI engineering (RAG, intelligent agents, Azure AI Foundry) and Cloud/DevOps (Microsoft Azure, CI/CD pipelines). Skilled in C#, Python, JavaScript/TypeScript, ReactJS, and .NET Core.",
   skills: [
     "React",
     "Next.js",
@@ -38,13 +38,28 @@ export const DATA = {
     "Shadcn UI",
     "Ant Design",
     "Bootstrap",
+    "AI Agents",
+    "RAG (Retrieval-Augmented Generation)",
+    "Prompt Engineering",
+    "MCP (Model Context Protocol)",
+    "CopilotKit",
+    "LangChain",
+    "LangGraph",
+    "Harness Engineering",
+    "Context Engineering",
+    "OpenAI / Gemini APIs",
+    "Vector Databases",
+    "Microsoft Azure",
+    "Azure AI Foundry",
+    "DevOps",
+    "CI/CD",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "work.nguyenanh92@gmail.com",
+    email: "work@nguyenanh98.com",
     tel: "+123456789",
     social: {
       GitHub: {
@@ -94,7 +109,8 @@ export const DATA = {
       logoUrl: "/add.jpg",
       start: "Otc 2022",
       end: "Now",
-      description: "Code for various projects",
+      description:
+        "Architected and developed enterprise web/mobile applications. Managed and administered Microsoft Azure cloud environments, implemented CI/CD pipelines for automated builds/deployments, and integrated generative AI services using Azure AI Foundry.",
     },
     {
       company: "VNEXT HOLDINGS · ",
@@ -225,7 +241,7 @@ export const DATA = {
       video: "",
     },
     {
-      title: "AOD Feedback Mailbox",
+      title: "AOD Confession",
       href: "https://homthu.add-on-company.com",
       dates: "2023",
       active: true,
@@ -407,7 +423,7 @@ export const DATA = {
       dates: "Mar 2022 - Sep 2022",
       active: true,
       description:
-        "Dự án riêng về website bán hàng chuẩn SEO, tích hợp các cổng thanh toán và đơn vị vận chuyển",
+        "Personal SEO-optimized e-commerce website integrated with payment gateways and shipping services.",
       technologies: [
         "Next.js",
         "Typescript",
@@ -433,7 +449,7 @@ export const DATA = {
       href: "https://panda-fund.vercel.app/dashboard/",
       dates: "2024",
       active: true,
-      description: "Quản lý quỹ và chi tiêu",
+      description: "Fund management and expense tracking platform.",
       technologies: [
         "Next.js",
         "Typescript",
@@ -459,7 +475,7 @@ export const DATA = {
       href: "https://panda-tracker.vercel.app/",
       dates: "2024",
       active: true,
-      description: "Quản lý tài chính và chi tiêu",
+      description: "Personal finance and spending tracker.",
       technologies: [
         "Next.js",
         "Typescript",
@@ -484,7 +500,7 @@ export const DATA = {
     //   href: "https://salaryaod.netlify.app/",
     //   dates: "2022",
     //   active: true,
-    //   description: "Web craw tỷ giá và quy đổi tiền tệ",
+    //   description: "Web scraper for exchange rates and currency converter.",
     //   technologies: ["Vue.js", "Typescript", "Nodejs", "XML"],
     //   links: [
     //     {
@@ -501,7 +517,7 @@ export const DATA = {
     //   href: "https://panda88.vercel.app/",
     //   dates: "2024",
     //   active: true,
-    //   description: "Web cá cược hội thao nội bộ",
+    //   description: "Web platform for internal sports betting.",
     //   technologies: [
     //     "Next.js",
     //     "MongoDB",
@@ -525,7 +541,7 @@ export const DATA = {
       href: "https://panda-scan.vercel.app/",
       dates: "2024",
       active: true,
-      description: "Web check thông tin của thư viện NPM và NUGET PACKAGE",
+      description: "Web utility to check metadata of NPM and NuGet packages.",
       technologies: ["Next.js", "Typescript", "Shadcn UI"],
       links: [
         {
@@ -542,7 +558,7 @@ export const DATA = {
     //   href: "https://chromewebstore.google.com/detail/pandaex/bjgfakkjhmjipfonglkbecengkjjaacg",
     //   dates: "2024",
     //   active: true,
-    //   description: "Extension note tiền nợ ăn trưa",
+    //   description: "Chrome extension for tracking lunch debt notes.",
     //   technologies: ["Javascript"],
     //   links: [
     //     {
@@ -559,7 +575,7 @@ export const DATA = {
     //   href: "https://panda-tarot.vercel.app/",
     //   dates: "2024",
     //   active: true,
-    //   description: "Web xem tarot online",
+    //   description: "Online Tarot card reading website.",
     //   technologies: ["React.js", "GeminiAPI", "Typescript"],
     //   links: [
     //     {
@@ -955,6 +971,54 @@ export const DATA = {
           href: "https://github.com/UWPortalSDK/crowmark",
         },
       ],
+    },
+  ],
+  certificates: [
+    {
+      title: "Generative AI for Educators with Gemini Certificate",
+      issuer: "Google",
+      issuerLogo: "google",
+      date: "Dec 2025",
+      credentialUrl: "https://edu.exceedlms.com/student/award/R6oVpTKM6UCRpGewJjz2e2Rh",
+      skills: [],
+      description: "",
+    },
+    {
+      title: "BOOTCAMP LLM & AI AIGENT",
+      issuer: "Cole",
+      issuerLogo: "cole",
+      date: "2025",
+      credentialUrl: "/certificates/1751518353150.jpg",
+      skills: ["Retrieval-Augmented Generation (RAG)", "AI Agents"],
+      description: "",
+    },
+    {
+      title: "AI Applications for Vietnamese Youth",
+      issuer: "OpenEdu",
+      issuerLogo: "openedu",
+      date: "May 2025",
+      credentialUrl: "/certificates/OpenEDU Khoá học Ứng dụng AI cho Thanh niên Việt Nam.pdf",
+      skills: ["AI Prompting"],
+      description:
+        "This initiative explores how artificial intelligence can empower Vietnamese youth across education, career development, creativity, and civic engagement. By leveraging AI tools and platforms, young people in Vietnam can access new opportunities, enhance problem-solving skills, and contribute to building a smarter, more inclusive digital future.",
+    },
+    {
+      title: "Generative AI for Educators Certificate",
+      issuer: "Google",
+      issuerLogo: "google",
+      date: "Jun 2025",
+      credentialUrl: "https://skillshop.exceedlms.com/student/award/RAEwYRFcZPRxi9tfNGmbTgFC",
+      skills: [],
+      description: "",
+    },
+    {
+      title: "Google Prompting Essentials",
+      issuer: "Coursera",
+      issuerLogo: "coursera",
+      date: "Apr 2025",
+      credentialUrl: "https://www.credly.com/badges/f084f55f-28ed-49bc-bf09-42bfe4f79d1f/linked_in_profile",
+      skills: [],
+      description: "",
     },
   ],
 } as const;
