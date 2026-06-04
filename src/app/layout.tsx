@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Outfit as FontSans, Space_Mono as FontMono } from "next/font/google";
 import "./globals.css";
+import { FancyboxInitializer } from "@/components/fancybox-initializer";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -74,6 +75,7 @@ export default function RootLayout({
           <TooltipProvider delayDuration={0}>
             {children}
             <Navbar />
+            <FancyboxInitializer />
           </TooltipProvider>
         </ThemeProvider>
       </body>

@@ -224,7 +224,7 @@ export const DATA = {
     },
     {
       title: "AOD Trade Union Portal",
-      href: "https://congdoan.add-on-company.com",
+      href: "#",
       dates: "2024",
       active: true,
       description:
@@ -233,7 +233,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://congdoan.add-on-company.com",
+          href: "#",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -242,7 +242,7 @@ export const DATA = {
     },
     {
       title: "AOD Confession",
-      href: "https://homthu.add-on-company.com",
+      href: "#",
       dates: "2023",
       active: true,
       description:
@@ -251,7 +251,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://homthu.add-on-company.com",
+          href: "#",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -260,7 +260,7 @@ export const DATA = {
     },
     {
       title: "AOD Voting Platform",
-      href: "https://voting.add-on-company.com",
+      href: "#",
       dates: "2024",
       active: true,
       description:
@@ -269,7 +269,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://voting.add-on-company.com",
+          href: "#",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -278,7 +278,7 @@ export const DATA = {
     },
     {
       title: "AOD Voucher Rewards",
-      href: "https://voucher.add-on-company.com",
+      href: "#",
       dates: "2024",
       active: true,
       description:
@@ -287,7 +287,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://voucher.add-on-company.com",
+          href: "#",
           icon: <Icons.globe className="size-3" />,
         },
       ],

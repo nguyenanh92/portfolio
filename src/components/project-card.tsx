@@ -40,9 +40,10 @@ export function ProjectCard({
         className
       )}
     >
-      <Link
-        href={href || "#"}
-        target="_blank"
+      <a
+        href={image}
+        data-fancybox="gallery"
+        data-caption={title}
         className="block cursor-pointer overflow-hidden relative aspect-video w-full bg-muted border-b border-zinc-200/50 dark:border-zinc-800/40"
       >
         {video && (
@@ -66,9 +67,9 @@ export function ProjectCard({
           />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-          <span className="text-white text-xs font-mono">View Project ↗</span>
+          <span className="text-white text-xs font-mono">Zoom Image 🔍</span>
         </div>
-      </Link>
+      </a>
       <div className="flex flex-col flex-1 p-5 space-y-3">
         <div className="space-y-1.5">
           <div className="flex items-start justify-between gap-x-2">
