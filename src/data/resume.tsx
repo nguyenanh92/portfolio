@@ -319,6 +319,18 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Outlook Agent",
+      href: "#",
+      dates: "2024",
+      active: true,
+      description:
+        "An intelligent AI agent deployed directly within Microsoft Outlook. It automates email drafting, summarizes long conversation threads, extracts action items, and schedules calendar events using advanced natural language processing.",
+      technologies: ["Office Add-in SDK", "React", "Node.js", "Express", "OpenAI API", "TailwindCSS", "Typescript"],
+      links: [],
+      image: "/products/outlook-agent.png",
+      video: "",
+    },
+    {
       title: "Eniplaces",
       href: "https://www.eniplaces.com/",
       dates: "2025",
