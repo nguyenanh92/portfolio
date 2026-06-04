@@ -207,6 +207,102 @@ export const DATA = {
       video: "",
     },
     {
+      title: "AOD Trade Union Portal",
+      href: "https://congdoan.add-on-company.com",
+      dates: "2024",
+      active: true,
+      description:
+        "An internal enterprise portal for managing trade union activities, welfare programs, member registrations, and collective benefits.",
+      technologies: [".NET Core", "React", "MSSQL", "TailwindCSS", "Typescript"],
+      links: [
+        {
+          type: "Website",
+          href: "https://congdoan.add-on-company.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/products/congdoan.add-on-company.com_.png",
+      video: "",
+    },
+    {
+      title: "AOD Feedback Mailbox",
+      href: "https://homthu.add-on-company.com",
+      dates: "2023",
+      active: true,
+      description:
+        "A secure, anonymous suggestions system for enterprise employees, facilitating direct communication with corporate management.",
+      technologies: [".NET Core", "Vue.js", "MSSQL", "Bootstrap", "Javascript"],
+      links: [
+        {
+          type: "Website",
+          href: "https://homthu.add-on-company.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/products/homthu.add-on-company.com.png",
+      video: "",
+    },
+    {
+      title: "AOD Voting Platform",
+      href: "https://voting.add-on-company.com",
+      dates: "2024",
+      active: true,
+      description:
+        "An employee polling and voting system for union elections, policy voting, and corporate surveys with secure verification.",
+      technologies: ["React", "Next.js", "Node.js", "MongoDB", "TailwindCSS", "Typescript"],
+      links: [
+        {
+          type: "Website",
+          href: "https://voting.add-on-company.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/products/voting.add-on-company.com_.png",
+      video: "",
+    },
+    {
+      title: "AOD Voucher Rewards",
+      href: "https://voucher.add-on-company.com",
+      dates: "2024",
+      active: true,
+      description:
+        "A corporate rewards distribution platform allowing administration to allocate vouchers and gifts to employees for recognition, holidays, and milestones.",
+      technologies: [".NET Core", "React", "MSSQL", "TailwindCSS", "Typescript"],
+      links: [
+        {
+          type: "Website",
+          href: "https://voucher.add-on-company.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/products/voucher.add-on-company.com_.png",
+      video: "",
+    },
+    {
+      title: "Teams QR Employees",
+      href: "#",
+      dates: "2024",
+      active: true,
+      description:
+        "A Microsoft Teams application providing dynamic QR codes for employee authentication, campus check-ins, and secure facility access control.",
+      technologies: ["Microsoft Teams SDK", "React", "Node.js", "Express", "TailwindCSS", "Typescript"],
+      links: [],
+      image: "/products/qr-employess.png",
+      video: "",
+    },
+    {
+      title: "Teams Azure DevOps Manager",
+      href: "#",
+      dates: "2024",
+      active: true,
+      description:
+        "An integrated Microsoft Teams app that links with Azure DevOps API, enabling team members to manage scrum boards and tasks directly inside Teams chats.",
+      technologies: ["Microsoft Teams SDK", "Azure DevOps API", "React", "Node.js", "TailwindCSS", "Typescript"],
+      links: [],
+      image: "/products/azure-devops-task-manager.png",
+      video: "",
+    },
+    {
       title: "Eniplaces",
       href: "https://www.eniplaces.com/",
       dates: "2025",
