@@ -164,11 +164,54 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Harness Learning",
+      href: "https://harness.nguyenanh98.com",
+      dates: "2025",
+      active: true,
+      description:
+        "Learn Harness Engineering is a course dedicated to the engineering of AI coding agents..",
+      technologies: [
+        "React",
+        "Vite",
+        "TailwindCSS",
+        "CopilotKit",
+        "Mermaid.js",
+        "Typescript",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://harness.nguyenanh98.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/products/harness.nguyenanh98.com.png",
+      video: "",
+    },
+    {
+      title: "Kitora Tools",
+      href: "https://kitora.tools",
+      dates: "2025",
+      active: true,
+      description:
+        "A collection of essential online developer tools and utilities including formatters, encoders, parsers, and quick testing playgrounds.",
+      technologies: ["Next.js", "Typescript", "TailwindCSS", "Shadcn UI"],
+      links: [
+        {
+          type: "Website",
+          href: "https://kitora.tools",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/products/kitora.tools.png",
+      video: "",
+    },
+    {
       title: "Eniplaces",
       href: "https://www.eniplaces.com/",
       dates: "2025",
       active: true,
-      description:"Explore thousands of places across different categories. From authentic local eateries to luxury hotels, find exactly what you're searching for.",
+      description: "Explore thousands of places across different categories. From authentic local eateries to luxury hotels, find exactly what you're searching for.",
       technologies: ["Next.js", "Typescript", "TailwindCSS", "Shadcn UI"],
       links: [
         {
@@ -311,7 +354,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/panda-fund.png",
+      image: "/products/panda-fund.png",
       video: "",
     },
 
@@ -337,50 +380,50 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/panda-tracker.png",
+      image: "/products/panda-tracker.png",
       video: "",
     },
-    {
-      title: "Salary Exchange",
-      href: "https://salaryaod.netlify.app/",
-      dates: "2022",
-      active: true,
-      description: "Web craw tỷ giá và quy đổi tiền tệ",
-      technologies: ["Vue.js", "Typescript", "Nodejs", "XML"],
-      links: [
-        {
-          type: "Website",
-          href: "https://salaryaod.netlify.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/salary.png",
-      video: "",
-    },
-    {
-      title: "Panda Bet",
-      href: "https://panda88.vercel.app/",
-      dates: "2024",
-      active: true,
-      description: "Web cá cược hội thao nội bộ",
-      technologies: [
-        "Next.js",
-        "MongoDB",
-        "NextAuth",
-        "Typescript",
-        "Prisma",
-        "Shadcn UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://panda88.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/panda-bet.png",
-      video: "",
-    },
+    // {
+    //   title: "Salary Exchange",
+    //   href: "https://salaryaod.netlify.app/",
+    //   dates: "2022",
+    //   active: true,
+    //   description: "Web craw tỷ giá và quy đổi tiền tệ",
+    //   technologies: ["Vue.js", "Typescript", "Nodejs", "XML"],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://salaryaod.netlify.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/products/salary.png",
+    //   video: "",
+    // },
+    // {
+    //   title: "Panda Bet",
+    //   href: "https://panda88.vercel.app/",
+    //   dates: "2024",
+    //   active: true,
+    //   description: "Web cá cược hội thao nội bộ",
+    //   technologies: [
+    //     "Next.js",
+    //     "MongoDB",
+    //     "NextAuth",
+    //     "Typescript",
+    //     "Prisma",
+    //     "Shadcn UI",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://panda88.vercel.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/products/panda-bet.png",
+    //   video: "",
+    // },
     {
       title: "Panda Scan",
       href: "https://panda-scan.vercel.app/",
@@ -395,43 +438,43 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/scan.png",
+      image: "/products/scan.png",
       video: "",
     },
-    {
-      title: "Panda Note Money Extension",
-      href: "https://chromewebstore.google.com/detail/pandaex/bjgfakkjhmjipfonglkbecengkjjaacg",
-      dates: "2024",
-      active: true,
-      description: "Extension note tiền nợ ăn trưa",
-      technologies: ["Javascript"],
-      links: [
-        {
-          type: "Extension",
-          href: "https://chromewebstore.google.com/detail/pandaex/bjgfakkjhmjipfonglkbecengkjjaacg",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/panda-note.png",
-      video: "",
-    },
-    {
-      title: "Panda Tarot",
-      href: "https://panda-tarot.vercel.app/",
-      dates: "2024",
-      active: true,
-      description: "Web xem tarot online",
-      technologies: ["React.js", "GeminiAPI", "Typescript"],
-      links: [
-        {
-          type: "Website",
-          href: "https://panda-tarot.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/tarot.png",
-      video: "",
-    },
+    // {
+    //   title: "Panda Note Money Extension",
+    //   href: "https://chromewebstore.google.com/detail/pandaex/bjgfakkjhmjipfonglkbecengkjjaacg",
+    //   dates: "2024",
+    //   active: true,
+    //   description: "Extension note tiền nợ ăn trưa",
+    //   technologies: ["Javascript"],
+    //   links: [
+    //     {
+    //       type: "Extension",
+    //       href: "https://chromewebstore.google.com/detail/pandaex/bjgfakkjhmjipfonglkbecengkjjaacg",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/products/panda-note.png",
+    //   video: "",
+    // },
+    // {
+    //   title: "Panda Tarot",
+    //   href: "https://panda-tarot.vercel.app/",
+    //   dates: "2024",
+    //   active: true,
+    //   description: "Web xem tarot online",
+    //   technologies: ["React.js", "GeminiAPI", "Typescript"],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://panda-tarot.vercel.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/products/tarot.png",
+    //   video: "",
+    // },
   ],
   hackathons: [
     {

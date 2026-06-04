@@ -2,7 +2,6 @@
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
@@ -41,31 +40,31 @@ export const ResumeCard = ({
   return (
     <Link
       href={href || "#"}
-      className="block cursor-pointer"
+      className="block cursor-pointer group"
       onClick={handleClick}
     >
-      <Card className="flex">
+      <div className="flex bg-transparent hover:bg-zinc-500/5 dark:hover:bg-zinc-400/5 p-4 rounded-xl border border-transparent hover:border-zinc-200/40 dark:hover:border-zinc-800/30 transition-all duration-300">
         <div className="flex-none">
-          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
+          <Avatar className="border border-zinc-200/60 dark:border-zinc-800/50 size-12 m-auto bg-white dark:bg-zinc-950 p-1">
             <AvatarImage
               src={logoUrl}
               alt={altText}
-              className="object-contain"
+              className="object-contain rounded-full"
             />
-            <AvatarFallback>{altText[0]}</AvatarFallback>
+            <AvatarFallback className="font-mono text-zinc-500">{altText[0]}</AvatarFallback>
           </Avatar>
         </div>
-        <div className="flex-grow ml-4 items-center flex-col group">
-          <CardHeader>
+        <div className="flex-grow ml-4 items-center flex-col">
+          <div className="flex flex-col space-y-1">
             <div className="flex items-center justify-between gap-x-2 text-base">
-              <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
+              <h3 className="inline-flex items-center justify-center font-semibold leading-none text-sm sm:text-base text-foreground group-hover:text-primary transition-colors">
                 {title}
                 {badges && (
-                  <span className="inline-flex gap-x-1">
+                  <span className="inline-flex gap-x-1 ml-2">
                     {badges.map((badge, index) => (
                       <Badge
                         variant="secondary"
-                        className="align-middle text-xs"
+                        className="align-middle text-[9px] font-mono bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border-none"
                         key={index}
                       >
                         {badge}
@@ -73,38 +72,39 @@ export const ResumeCard = ({
                     ))}
                   </span>
                 )}
-                <ChevronRightIcon
-                  className={cn(
-                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
-                    isExpanded ? "rotate-90" : "rotate-0"
-                  )}
-                />
+                {description && (
+                  <ChevronRightIcon
+                    className={cn(
+                      "size-3.5 ml-1.5 text-zinc-400 transform transition-all duration-300 ease-out group-hover:translate-x-0.5",
+                      isExpanded ? "rotate-90 text-primary" : "rotate-0"
+                    )}
+                  />
+                )}
               </h3>
-              <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
+              <div className="text-xs font-mono text-muted-foreground text-right shrink-0">
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
-          </CardHeader>
+            {subtitle && <div className="font-sans text-xs text-muted-foreground font-medium">{subtitle}</div>}
+          </div>
           {description && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-
                 height: isExpanded ? "auto" : 0,
               }}
               transition={{
-                duration: 0.7,
+                duration: 0.5,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="mt-3 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed border-l-2 border-zinc-200/50 dark:border-zinc-800/50 pl-3"
             >
               {description}
             </motion.div>
           )}
         </div>
-      </Card>
+      </div>
     </Link>
   );
 };
