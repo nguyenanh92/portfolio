@@ -76,17 +76,22 @@ export const DATA = {
 
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "#",
-        icon: Icons.x,
-
+      J2Team: {
+        name: "J2Team",
+        url: "https://launch.j2team.dev/@nguyen-anh-2",
+        icon: Icons.j2team,
         navbar: true,
       },
-      Youtube: {
-        name: "Youtube",
-        url: "#",
-        icon: Icons.youtube,
+      Unikorn: {
+        name: "Unikorn",
+        url: "https://unikorn.vn/u/nguyen-anh-fkpu3f",
+        icon: Icons.unikorn,
+        navbar: true,
+      },
+      ProductHunt: {
+        name: "Product Hunt",
+        url: "https://www.producthunt.com/@nguyenanh98",
+        icon: Icons.producthunt,
         navbar: true,
       },
       email: {
@@ -180,19 +185,95 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "EniMail",
+      href: "https://eni-mail.online",
+      dates: "2026",
+      active: true,
+      description:
+        "A modern email service platform with a clean interface for managing and sending emails efficiently.",
+      technologies: [
+        "TanStack Start",
+        "React",
+        "Typescript",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Drizzle ORM",
+        "Cloudflare D1",
+        "Cloudflare Workers",
+        "Vite",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://eni-mail.online",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/products/eni-mail.online_.png",
+      video: "",
+    },
+    {
+      title: "Monpos",
+      href: "#",
+      dates: "2024",
+      active: true,
+      description:
+        "A point-of-sale (POS) system designed for managing sales, inventory, and business operations with an intuitive interface.",
+      technologies: [
+        "Tauri",
+        "Rust",
+        "React",
+        "Typescript",
+        "TailwindCSS",
+        "SQLite",
+        "Drizzle ORM",
+        "Vite",
+        "Zustand",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "#",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/products/monpos.png",
+      video: "",
+    },
+    {
+      title: "The Places Finder",
+      href: "https://www.theplacesfinder.com",
+      dates: "2026",
+      active: true,
+      description:
+        "Discover and explore various places across different categories. Find restaurants, hotels, attractions, and more with detailed information and reviews.",
+      technologies: ["Next.js", "Typescript", "TailwindCSS", "Shadcn UI"],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.theplacesfinder.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/products/www.theplacesfinder.com_.png",
+      video: "",
+    },
+    {
       title: "Harness Learning",
       href: "https://harness.nguyenanh98.com",
-      dates: "2025",
+      dates: "2026",
       active: true,
       description:
         "Learn Harness Engineering is a course dedicated to the engineering of AI coding agents..",
       technologies: [
         "React",
+        "VitePress",
         "Vite",
         "TailwindCSS",
         "CopilotKit",
         "Mermaid.js",
         "Typescript",
+        "Framer Motion",
       ],
       links: [
         {
@@ -205,9 +286,27 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Harness Kit",
+      href: "https://nguyenanh92.github.io/harness-kit",
+      dates: "2026",
+      active: true,
+      description:
+        "A zero-dependency AI Agent Harness template and validation kit using standard Python libraries to build resilient, self-correcting agents.",
+      technologies: ["HTML", "Vanilla CSS", "JavaScript", "Python", "Mermaid.js"],
+      links: [
+        {
+          type: "Website",
+          href: "https://nguyenanh92.github.io/harness-kit",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/products/nguyenanh92.github.io_harness-kit_.png",
+      video: "",
+    },
+    {
       title: "Kitora Tools",
       href: "https://kitora.tools",
-      dates: "2025",
+      dates: "2026",
       active: true,
       description:
         "A collection of essential online developer tools and utilities including formatters, encoders, parsers, and quick testing playgrounds.",
@@ -243,7 +342,7 @@ export const DATA = {
     {
       title: "AOD Confession",
       href: "#",
-      dates: "2023",
+      dates: "2025",
       active: true,
       description:
         "A secure, anonymous suggestions system for enterprise employees, facilitating direct communication with corporate management.",
@@ -261,7 +360,7 @@ export const DATA = {
     {
       title: "AOD Voting Platform",
       href: "#",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "An employee polling and voting system for union elections, policy voting, and corporate surveys with secure verification.",
@@ -279,7 +378,7 @@ export const DATA = {
     {
       title: "AOD Voucher Rewards",
       href: "#",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "A corporate rewards distribution platform allowing administration to allocate vouchers and gifts to employees for recognition, holidays, and milestones.",
@@ -357,10 +456,10 @@ export const DATA = {
       technologies: [
         "Next.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "Supabase",
+        "OpenAI API",
+        "Lemon Squeezy",
         "TailwindCSS",
-        "Polar.sh",
         "Shadcn UI",
       ],
       links: [
@@ -829,7 +928,7 @@ export const DATA = {
         },
         {
           title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
+          icon: <Icons.globe className="h-4 w-4" />,
           href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
         },
         {
@@ -864,7 +963,7 @@ export const DATA = {
         },
         {
           title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
+          icon: <Icons.globe className="h-4 w-4" />,
           href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
         },
         {
