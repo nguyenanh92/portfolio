@@ -214,8 +214,8 @@ export const DATA = {
     },
     {
       title: "Monpos",
-      href: "#",
-      dates: "2024",
+      href: "https://monpos.vn",
+      dates: "2026",
       active: true,
       description:
         "A point-of-sale (POS) system designed for managing sales, inventory, and business operations with an intuitive interface.",
