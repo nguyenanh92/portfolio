@@ -46,6 +46,7 @@ export const DATA = {
     "Supabase",
     "Redis",
     "AI Agents",
+    "PrimeKit AI Coding Suite",
     "RAG (Retrieval-Augmented Generation)",
     "Prompt Engineering",
     "MCP (Model Context Protocol)",
@@ -202,6 +203,39 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "PrimeKit AI Coding Suite",
+      href: "https://primekit-web.nguyen-anh.workers.dev",
+      dates: "2026",
+      active: true,
+      description:
+        "The Universal Agentic AI Coding Suite featuring 110 production-grade skills, structured multi-agent workflows, root-cause diagnosis, and SHA256 integrity verification for Claude Code, Cursor IDE, Antigravity, and VS Code.",
+      technologies: [
+        "HTML5",
+        "Vanilla CSS",
+        "JavaScript (ES6+)",
+        "Cloudflare Workers",
+        "Cloudflare Pages",
+        "NPM Package",
+        "AI Agents",
+        "MCP",
+        "CLI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://primekit-web.nguyen-anh.workers.dev",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/nguyenanh92/PrimeKit",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/products/primekit.png",
+      video: "",
+    },
     {
       title: "Synthanswerai",
       href: "https://www.synthanswerai.com/",
