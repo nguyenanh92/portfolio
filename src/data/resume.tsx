@@ -205,7 +205,7 @@ export const DATA = {
   projects: [
     {
       title: "PrimeKit AI Coding Suite",
-      href: "https://primekit-web.nguyen-anh.workers.dev",
+      href: "https://primekit.nguyenanh98.com",
       dates: "2026",
       active: true,
       description:
@@ -224,7 +224,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://primekit-web.nguyen-anh.workers.dev",
+          href: "https://primekit.nguyenanh98.com",
           icon: <Icons.globe className="size-3" />,
         },
         {
