@@ -23,15 +23,22 @@ const fontMono = FontMono({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: DATA.name,
-    template: `%s | ${DATA.name}`,
+    default: "Nguyen Anh Tuan — Software & AI Engineer",
+    template: "%s | Nguyen Anh Tuan — Software & AI Engineer",
   },
   description: DATA.description,
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
   openGraph: {
-    title: `${DATA.name}`,
+    title: "Nguyen Anh Tuan — Software & AI Engineer",
     description: DATA.description,
     url: DATA.url,
-    siteName: `${DATA.name}`,
+    siteName: "Nguyen Anh Tuan — Software & AI Engineer",
     locale: "en_US",
     type: "website",
     images: ["/me.webp"]
@@ -48,7 +55,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.name}`,
+    title: "Nguyen Anh Tuan — Software & AI Engineer",
     card: "summary_large_image",
     images: ["/me.webp"]
   },
