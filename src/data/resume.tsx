@@ -204,6 +204,34 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "AOD TimeTracker",
+      href: "#",
+      dates: "2026",
+      active: true,
+      description:
+        "An attendance and timesheet system that syncs punches from on-site time clocks through a Windows collector service, calculates shifts, overtime and leave, handles employee requests and approvals, and locks monthly periods for payroll export.",
+      technologies: [
+        "Remix",
+        "React",
+        "Typescript",
+        "Prisma",
+        "SQLite",
+        "PowerShell",
+        ".NET WinForms",
+        "Cloudflare Tunnel",
+        "Microsoft Entra ID",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "#",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/products/timetracker.png",
+      video: "",
+    },
+    {
       title: "PrimeKit AI Coding Suite",
       href: "https://primekit.nguyenanh98.com",
       dates: "2026",
