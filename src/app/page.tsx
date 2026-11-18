@@ -182,6 +182,7 @@ export default function Page() {
                   { label: "Certificates", href: "#certificates" },
                   { label: "Skills & Stack", href: "#skills" },
                   { label: "Selected Projects", href: "#projects" },
+                  { label: "Writing", href: "#writing" },
                   { label: "Get in Touch", href: "#contact" }
                 ].map((item) => (
                   <Link
@@ -423,9 +424,61 @@ export default function Page() {
             </div>
           </section>
 
+          {/* Writing Section */}
+          <section id="writing" className="scroll-mt-24">
+            <div className="space-y-6">
+              <BlurFade delay={BLUR_FADE_DELAY * 13}>
+                <div className="flex items-center gap-3">
+                  <h2 className="text-xs font-mono text-primary uppercase tracking-widest">07 / Writing</h2>
+                  <div className="h-[1px] flex-1 bg-zinc-200 dark:bg-zinc-800/60"></div>
+                </div>
+              </BlurFade>
+
+              <BlurFade delay={BLUR_FADE_DELAY * 14}>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 p-6 rounded-2xl border border-zinc-200/50 dark:border-zinc-800/40 bg-zinc-500/5 dark:bg-zinc-400/5">
+                  <div className="space-y-2 max-w-[38ch]">
+                    <span className="text-[10px] font-mono text-primary uppercase tracking-widest">
+                      Viblo Community
+                    </span>
+                    <h3 className="text-base font-semibold tracking-tight text-foreground">
+                      Technical Articles &amp; Notes
+                    </h3>
+                    <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
+                      Sharing practical insights on software engineering, AI agents, and full-stack architecture on Viblo.
+                    </p>
+                    <div className="pt-1">
+                      <Link
+                        href="https://viblo.asia/u/nguyenanh98"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-xs font-mono font-medium hover:underline text-primary"
+                      >
+                        Visit Viblo profile ↗
+                      </Link>
+                    </div>
+                  </div>
+
+                  <div className="shrink-0 flex justify-center sm:justify-end">
+                    <div className="rounded-xl overflow-hidden border border-zinc-200/60 dark:border-zinc-800/60 bg-white shadow-sm w-full max-w-[300px]">
+                      <iframe
+                        id="frame"
+                        src="https://viblo.asia/embed/users/nguyenanh98"
+                        title="Viblo Profile - Nguyen Anh Tuan"
+                        width="300"
+                        height="180"
+                        loading="lazy"
+                        className="block w-full max-w-[300px] border-0"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </BlurFade>
+            </div>
+          </section>
+
           {/* Contact Section */}
           <section id="contact" className="scroll-mt-24">
-            <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <BlurFade delay={BLUR_FADE_DELAY * 15}>
               <div className="rounded-2xl liquid-glass p-8 text-center space-y-6 relative overflow-hidden">
                 <div className="absolute top-0 right-0 size-24 bg-primary/10 rounded-full blur-2xl"></div>
                 <div className="absolute bottom-0 left-0 size-24 bg-primary/10 rounded-full blur-2xl"></div>
